@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="resume.js" defer></script>
+</head>
+<body>
+    <div class="resume-container" id="resume-content">
+       <!-- Left section -->
+<fieldset>
+    <legend>Left Section</legend>
+
+    <!-- Profile Picture Upload -->
+    <label for="profile-picture-input">Upload Profile Picture:</label>
+    <input type="file" id="profile-picture-input" accept="image/*">
+    
+    <label for="career-objective-input">Career Objective:</label>
+    <textarea id="career-objective-input" placeholder="Enter your career objective" rows="5"></textarea>
+
+    <label for="certifications-input">Certifications:</label>
+    <textarea id="certifications-input" placeholder="Enter certifications" rows="5"></textarea>
+
+    <label for="languages-input">Languages:</label>
+    <textarea id="languages-input" placeholder="Enter languages" rows="3"></textarea>
+</fieldset>
+
+        
+
+        <!-- Right section -->
+        <div class="right-section">
+            <h1>Dynamic Resume Builder</h1>
+
+            <form id="resume-form">
+                <!-- Personal Information -->
+                <section id="personal-info">
+                    <h3>Personal Information</h3>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter Your Name">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" placeholder="Enter Your Phone">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" placeholder="Enter Your Address">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter Your Email">
+                    <label for="linkedin">LinkedIn:</label>
+                    <input type="url" id="linkedin" placeholder="Enter Your LinkedIn URL">
+                </section>
+
+                <!-- Education -->
+                <section class="education">
+                    <h3>Education</h3>
+                    <textarea id="education" placeholder="Enter Your Education" rows="4"></textarea>
+                </section>
+
+                <!-- Work Experience -->
+                <section id="work-experience">
+                    <h3>Work Experience</h3>
+                    <textarea id="work-experience-input" placeholder="Enter Your Work Experience" rows="4"></textarea>
+                </section>
+
+                <!-- Skills -->
+                <section id="skills">
+                    <h3>Skills</h3>
+                    <textarea id="skills-input" placeholder="Enter Your Skills" rows="4"></textarea>
+                </section>
+
+                <!-- Submit and Download -->
+                <button type="submit">Generate Resume</button>
+                
+            </form>
+            
+        </div>
+    </div>
